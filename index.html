@@ -112,6 +112,9 @@ h2{font-size:clamp(34px,4.6vw,60px);line-height:1;font-weight:900;letter-spacing
 .split figure{border-radius:24px;overflow:hidden;aspect-ratio:16/11}
 .split figure img{width:100%;height:100%;object-fit:cover}
 .split .wide{grid-column:1/-1;aspect-ratio:16/7}
+.looks{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:22px}
+.looks figure{border-radius:24px;overflow:hidden;aspect-ratio:3/4}
+.looks img{width:100%;height:100%;object-fit:cover}
 .quote{font-family:var(--serif);font-style:italic;font-size:clamp(30px,3.4vw,46px);line-height:1.1;max-width:24ch;margin:60px auto 0;text-align:center}
 .quote small{display:block;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--muted);margin-top:16px}
 
@@ -130,7 +133,7 @@ footer .legal{margin-top:50px;font-size:12px;opacity:.6}
 
 @media (max-width:900px){
   .hero,.split{grid-template-columns:1fr}
-  .grid,.who{grid-template-columns:1fr}
+  .grid,.who,.looks{grid-template-columns:1fr}
   .feats{grid-template-columns:1fr 1fr}
   .nav ul{display:none}
   .eclipse .disc{width:280px;height:280px;right:-120px;opacity:.6}
@@ -248,6 +251,11 @@ footer .legal{margin-top:50px;font-size:12px;opacity:.6}
       <figure class="wide"><img src="img/terraza.jpg" alt="Gafas ECLIPSA Noir sobre un muro encalado al atardecer"></figure>
       <figure><img src="img/modelo.jpg" alt="Modelo con gafas ECLIPSA Noir en cuatro ángulos"></figure>
       <figure><img src="img/detalle.jpg" alt="Detalle del aro de cobre de ECLIPSA"></figure>
+    </div>
+    <div class="looks">
+      <figure><img src="img/look1.jpg" alt="Look de lino blanco en una terraza con ECLIPSA Noir"></figure>
+      <figure><img src="img/look2.jpg" alt="Look de cuero negro en la ciudad con ECLIPSA Noir"></figure>
+      <figure><img src="img/look3.jpg" alt="Look de crochet en una cala con ECLIPSA Noir"></figure>
     </div>
     <p class="quote">«Me paran por la calle para preguntarme de dónde son.»<small>Lucía, Valencia · ECLIPSA Noir</small></p>
   </div>
