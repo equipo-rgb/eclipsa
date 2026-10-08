@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECLIPSA · Gafas de sol escultóricas</title>
+<meta name="description" content="ECLIPSA diseña gafas de sol escultóricas de acetato pulido con aro de cobre. Tú decides cuándo se apaga el sol. Protección UV400, hechas a mano, envío gratis.">
+<meta property="og:title" content="ECLIPSA · Tú decides cuándo se apaga el sol">
+<meta property="og:description" content="Gafas de sol escultóricas de acetato pulido con aro de cobre. UV400, hechas a mano.">
+<meta property="og:image" content="img/noir.jpg">
+<meta name="theme-color" content="#0E0C0A">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "Organization", "name": "ECLIPSA", "slogan": "Tú decides cuándo se apaga el sol", "logo": "logo.svg",
+     "description": "Marca de gafas de sol escultóricas de acetato pulido con aro de cobre, diseñadas en el Mediterráneo."},
+    {"@type": "Product", "name": "ECLIPSA Noir", "image": "img/noir.jpg", "brand": {"@type": "Brand", "name": "ECLIPSA"},
+     "description": "Acetato negro azabache pulido a mano, aro de cobre y lentes degradadas ámbar. UV400.",
+     "offers": {"@type": "Offer", "price": "149.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}},
+    {"@type": "Product", "name": "ECLIPSA Hueso", "image": "img/hueso.jpg", "brand": {"@type": "Brand", "name": "ECLIPSA"},
+     "description": "Acetato color hueso, aro de cobre y lentes gris humo. UV400.",
+     "offers": {"@type": "Offer", "price": "149.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}},
+    {"@type": "Product", "name": "ECLIPSA Ámbar", "image": "img/ambar.jpg", "brand": {"@type": "Brand", "name": "ECLIPSA"},
+     "description": "Acetato translúcido ámbar que se enciende al sol, lentes marrón degradado. UV400.",
+     "offers": {"@type": "Offer", "price": "159.00", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#0E0C0A; --ink-2:#2A2520; --cream:#F3ECE2; --paper:#FAF6F0; --sand:#D8C2A0;
+  --copper:#C1703F; --copper-2:#E39A62; --muted:#7A6E62;
+  --serif:"Instrument Serif", Georgia, serif; --sans:"Archivo", system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* barra */
+.bar{background:var(--ink);color:var(--cream);text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px}
+header{position:sticky;top:0;z-index:10;background:rgba(250,246,240,.86);backdrop-filter:blur(12px);border-bottom:1px solid rgba(14,12,10,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;letter-spacing:.32em;font-size:18px}
+.brand img{width:30px;height:30px}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:14px}
+.nav ul a{text-decoration:none;opacity:.75}
+.nav ul a:hover{opacity:1}
+.cart{font-size:14px;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);border-radius:999px;padding:8px 16px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:72px 0 88px}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--copper);font-weight:700}
+h1{font-size:clamp(46px,7vw,104px);line-height:.92;font-weight:900;letter-spacing:-.035em;margin:18px 0 22px}
+h1 em,h2 em{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em;color:var(--copper)}
+.lead{font-size:19px;max-width:30ch;color:var(--ink-2)}
+.ctas{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:15px;padding:15px 26px;border-radius:999px;transition:transform .2s ease, background .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-line{border:1.5px solid var(--ink)}
+.hero-img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;background:var(--cream)}
+.hero-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.1) translate(-1.5%,-1%)}}
+.hero-img .ring{position:absolute;right:22px;bottom:22px;background:var(--ink);color:var(--cream);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:10px 14px;border-radius:999px}
+.trust{display:flex;gap:28px;margin-top:40px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.trust b{color:var(--ink)}
+
+/* eclipse divider */
+.eclipse{background:var(--ink);color:var(--cream);padding:110px 0;overflow:hidden;position:relative}
+.eclipse .big{font-size:clamp(40px,6vw,88px);line-height:1;font-weight:900;letter-spacing:-.03em;max-width:16ch}
+.eclipse .disc{position:absolute;right:-80px;top:50%;width:460px;height:460px;transform:translateY(-50%);border-radius:50%;box-shadow:0 0 0 3px var(--copper),0 0 90px 10px rgba(227,154,98,.45);background:var(--ink);animation:glow 5s ease-in-out infinite alternate}
+@keyframes glow{to{box-shadow:0 0 0 3px var(--copper-2),0 0 140px 24px rgba(227,154,98,.6)}}
+.eclipse p{margin-top:24px;max-width:46ch;color:#CFC4B6;font-size:18px;position:relative}
+
+/* productos */
+section{padding:100px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+h2{font-size:clamp(34px,4.6vw,60px);line-height:1;font-weight:900;letter-spacing:-.03em}
+.head p{max-width:38ch;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--cream);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s ease}
+.card:hover{transform:translateY(-6px)}
+.card figure{aspect-ratio:4/3;overflow:hidden}
+.card figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.card:hover figure img{transform:scale(1.06)}
+.card .info{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:22px;font-weight:900;letter-spacing:-.01em}
+.card .desc{color:var(--ink-2);font-size:15px}
+.card .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:14px}
+.price{font-size:22px;font-weight:700}
+.add{background:var(--ink);color:var(--cream);border:0;border-radius:999px;padding:11px 18px;font:700 14px var(--sans);cursor:pointer}
+.tag{align-self:flex-start;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--cream);padding:5px 10px;border-radius:999px}
+
+/* beneficios */
+.why{background:var(--cream)}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.feat{background:var(--paper);border-radius:22px;padding:28px}
+.feat .n{font-family:var(--serif);font-style:italic;font-size:44px;color:var(--copper);line-height:1}
+.feat h4{font-size:18px;margin:14px 0 8px;font-weight:900}
+.feat p{font-size:15px;color:var(--ink-2)}
+
+/* editorial */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.split figure{border-radius:24px;overflow:hidden;aspect-ratio:16/11}
+.split figure img{width:100%;height:100%;object-fit:cover}
+.split .wide{grid-column:1/-1;aspect-ratio:16/7}
+.quote{font-family:var(--serif);font-style:italic;font-size:clamp(30px,3.4vw,46px);line-height:1.1;max-width:24ch;margin:60px auto 0;text-align:center}
+.quote small{display:block;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--muted);margin-top:16px}
+
+/* para quién */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.who div{border-top:2px solid var(--ink);padding-top:18px}
+.who h4{font-size:20px;font-weight:900;margin-bottom:8px}
+.who p{color:var(--ink-2)}
+
+footer{background:var(--ink);color:#CFC4B6;padding:70px 0 40px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer .brand{color:var(--cream)}
+footer h5{color:var(--cream);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+footer li{list-style:none;margin:6px 0}
+footer .legal{margin-top:50px;font-size:12px;opacity:.6}
+
+@media (max-width:900px){
+  .hero,.split{grid-template-columns:1fr}
+  .grid,.who{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr 1fr}
+  .nav ul{display:none}
+  .eclipse .disc{width:280px;height:280px;right:-120px;opacity:.6}
+  footer .cols{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bar">Envío gratis en 48 h · Devolución en 30 días · Protección UV400</div>
+
+<header>
+  <nav class="wrap nav">
+    <a class="brand" href="#"><img src="logo.svg" alt="">ECLIPSA</a>
+    <ul>
+      <li><a href="#coleccion">Colección</a></li>
+      <li><a href="#por-que">Por qué ECLIPSA</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+    </ul>
+    <a class="cart" href="#coleccion">Cesta (0)</a>
+  </nav>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <span class="eyebrow">Colección Solsticio · Gafas de sol escultóricas</span>
+    <h1>Tú decides cuándo se <em>apaga</em> el sol.</h1>
+    <p class="lead">Acetato pulido a mano, curvas que parecen esculpidas y un aro de cobre que brilla como el borde de un eclipse.</p>
+    <div class="ctas">
+      <a class="btn btn-dark" href="#coleccion">Ver la colección</a>
+      <a class="btn btn-line" href="#lookbook">Lookbook</a>
+    </div>
+    <div class="trust">
+      <span><b>UV400</b> protección total</span>
+      <span><b>Hechas a mano</b> en acetato</span>
+      <span><b>2 años</b> de garantía</span>
+    </div>
+  </div>
+  <figure class="hero-img">
+    <img src="img/noir.jpg" alt="Gafas de sol ECLIPSA Noir de acetato negro con aro de cobre sobre una piedra">
+    <span class="ring">ECLIPSA Noir · 149 €</span>
+  </figure>
+</div>
+
+<div class="eclipse">
+  <div class="disc" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="big">No son gafas para esconderte. Son para que te miren.</p>
+    <p>Cada montura nace de un bloque de acetato que se talla, se lija y se pule durante días. El resultado pesa poco, aguanta mucho y no se parece a nada que lleve la gente a tu alrededor.</p>
+  </div>
+</div>
+
+<section id="coleccion">
+  <div class="wrap">
+    <div class="head">
+      <h2>La colección <em>Solsticio</em></h2>
+      <p>Un mismo diseño escultórico en tres acabados. Elige el tuyo según la luz con la que vives.</p>
+    </div>
+    <div class="grid">
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <figure><img itemprop="image" src="img/noir.jpg" alt="ECLIPSA Noir"></figure>
+        <div class="info">
+          <span class="tag">Más vendida</span>
+          <h3 itemprop="name">ECLIPSA Noir</h3>
+          <p class="desc" itemprop="description">Acetato negro azabache, aro de cobre y lentes degradadas ámbar. El clásico que no pasa desapercibido.</p>
+          <div class="row"><span class="price">149 €</span><button class="add">Añadir</button></div>
+        </div>
+      </article>
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <figure><img itemprop="image" src="img/hueso.jpg" alt="ECLIPSA Hueso"></figure>
+        <div class="info">
+          <span class="tag">Nueva</span>
+          <h3 itemprop="name">ECLIPSA Hueso</h3>
+          <p class="desc" itemprop="description">Acetato color hueso con lentes gris humo. Luminosa, limpia, perfecta para el verano.</p>
+          <div class="row"><span class="price">149 €</span><button class="add">Añadir</button></div>
+        </div>
+      </article>
+      <article class="card" itemscope itemtype="https://schema.org/Product">
+        <figure><img itemprop="image" src="img/ambar.jpg" alt="ECLIPSA Ámbar"></figure>
+        <div class="info">
+          <span class="tag">Edición limitada</span>
+          <h3 itemprop="name">ECLIPSA Ámbar</h3>
+          <p class="desc" itemprop="description">Acetato translúcido que se enciende cuando le da el sol. Lentes marrón degradado.</p>
+          <div class="row"><span class="price">159 €</span><button class="add">Añadir</button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="por-que" class="why">
+  <div class="wrap">
+    <div class="head">
+      <h2>Por qué <em>ECLIPSA</em></h2>
+      <p>Diseño de autor con lo que de verdad importa en unas gafas de sol.</p>
+    </div>
+    <div class="feats">
+      <div class="feat"><span class="n">01</span><h4>Protección UV400</h4><p>Bloquean el 100 % de los rayos UVA y UVB. Tus ojos, a salvo todo el verano.</p></div>
+      <div class="feat"><span class="n">02</span><h4>Acetato pulido a mano</h4><p>Nada de plástico inyectado: cada montura se talla y se pule durante días.</p></div>
+      <div class="feat"><span class="n">03</span><h4>Ligeras y cómodas</h4><p>Pesan menos de lo que parecen. Las llevas horas y te olvidas de ellas.</p></div>
+      <div class="feat"><span class="n">04</span><h4>Garantía de 2 años</h4><p>Envío gratis en 48 h, devolución en 30 días y dos años de garantía.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lookbook">
+  <div class="wrap">
+    <div class="head">
+      <h2>Lookbook <em>Solsticio</em></h2>
+      <p>De la terraza a la calle. Unas gafas que cambian el look entero.</p>
+    </div>
+    <div class="split">
+      <figure class="wide"><img src="img/terraza.jpg" alt="Gafas ECLIPSA Noir sobre un muro encalado al atardecer"></figure>
+      <figure><img src="img/modelo.jpg" alt="Modelo con gafas ECLIPSA Noir en cuatro ángulos"></figure>
+      <figure><img src="img/detalle.jpg" alt="Detalle del aro de cobre de ECLIPSA"></figure>
+    </div>
+    <p class="quote">«Me paran por la calle para preguntarme de dónde son.»<small>Lucía, Valencia · ECLIPSA Noir</small></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head"><h2>Para quién <em>son</em></h2></div>
+    <div class="who">
+      <div><h4>Para quien no quiere ir igual que todos</h4><p>Si las gafas de siempre te aburren, estas son una declaración.</p></div>
+      <div><h4>Para el verano entero</h4><p>Terraza, playa, ciudad o coche. Un diseño, tres acabados para cualquier luz.</p></div>
+      <div><h4>Para regalar</h4><p>Llegan en estuche rígido de cuero vegano con gamuza de microfibra.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="brand" href="#"><img src="logo.svg" alt="" style="width:30px;height:30px">ECLIPSA</a><p style="margin-top:14px;max-width:34ch">Gafas de sol escultóricas diseñadas en el Mediterráneo. Tú decides cuándo se apaga el sol.</p></div>
+      <div><h5>Tienda</h5><ul><li>ECLIPSA Noir</li><li>ECLIPSA Hueso</li><li>ECLIPSA Ámbar</li></ul></div>
+      <div><h5>Ayuda</h5><ul><li>Envíos y devoluciones</li><li>Garantía</li><li>Contacto</li></ul></div>
+    </div>
+    <p class="legal">ECLIPSA es una marca de demostración creada para un tutorial. No se venden productos reales.</p>
+  </div>
+</footer>
+</body>
+</html>
